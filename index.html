@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Кружки Волжского — каталог занятий для детей и взрослых</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <nav class="nav">
+        <div class="container nav__inner">
+        <a href="index.html" class="nav__logo">Кружки<span>Волжского</span></a>
+        <div class="nav__links">
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О проекте</a>
+        <a href="add.html" class="nav__cta">+ Добавить занятие</a>
+        </div>
+        <button class="nav__burger" onclick="document.querySelector('.nav__links').style.display='flex'" aria-label="Меню">
+        <svg width="22" height="18" viewBox="0 0 22 18" fill="none">
+        <rect y="0" width="22" height="2.5" rx="1.5" fill="#1A1A2E"/>
+        <rect y="7.5" width="22" height="2.5" rx="1.5" fill="#1A1A2E"/>
+        <rect y="15" width="22" height="2.5" rx="1.5" fill="#1A1A2E"/>
+        </svg>
+        </button>
+        </div>
+        </nav>
+
+        <section class="hero">
+            <div class="container hero__inner">
+                <div>
+                <div class="hero__eyebrow">
+                    <span></span>
+                    Более 150 занятий в Волжском
+                    </div>
+                    <h1>Найди<br>своё занятие</h1>
+                    <p class="hero__sub">Каталог кружков, секций, студий и курсов для детей и взрослых. Спорт, творчество, музыка, IT, языки — всё в одном месте.</p>
+                    <div class="hero__actions">
+                        <a href="catalog.html" class="btn btn--white">Смотреть каталог</a>
+                        <a href="catalog.html?free=1" class="btn btn--outline">Только бесплатные</a>
+                    </div>
+                    <div class="hero__stats">
+                        <div class="stat"><span class="stat__num">150+</span><span class="stat__label">занятий</span></div>
+                        <div class="stat"><span class="stat__num">45+</span><span class="stat__label">организаций</span></div>
+                        <div class="stat"><span class="stat__num">18</span><span class="stat__label">районов</span></div>
+                        <div class="stat"><span class="stat__num">12</span><span class="stat__label">категорий</span></div>
+                    </div>
+                </div>
+                <div class="hero__search">
+                    <div class="hero__search-label">Быстрый поиск</div>
+                    <div class="search-bar">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B7B" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                        <input type="text" id="heroSearch" placeholder="Футбол, рисование, Python..." autocomplete="off">
+                        <button class="btn--search" onclick="heroSearch()">Найти</button>
+                    </div>
+                        <div style="margin-top:14px">
+                        <div style="font-size:0.75rem;color:rgba(255,255,255,0.5);margin-bottom:8px;font-weight:600;letter-spacing:0.05em">ПОПУЛЯРНЫЕ:</div>
+                        <div style="display:flex;gap:6px;flex-wrap:wrap">
+                            <a href="catalog.html?category=sport" class="btn btn--outline" style="font-size:0.75rem;padding:5px 12px"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
+                            </svg>
+                            Спорт</a>
+                            <a href="catalog.html?category=art" class="btn btn--outline" style="font-size:0.75rem;padding:5px 12px"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
+                            </svg>
+                            Творчество</a>
+                            <a href="catalog.html?category=tech" class="btn btn--outline" style="font-size:0.75rem;padding:5px 12px"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+                            </svg>
+                            IT</a>
+                            <a href="catalog.html?free=1" class="btn btn--outline" style="font-size:0.75rem;padding:5px 12px"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
+                            Бесплатно</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section categories">
+            <div class="container">
+                <div class="section-header">
+                    <div><h2>Категории занятий</h2><p>Выберите направление, которое вас интересует</p></div>
+                    <a href="catalog.html" class="btn btn--ghost btn--sm">Все занятия →</a>
+                </div>
+                <div class="cats-grid" id="catsGrid"></div>
+            </div>
+        </section>
+
+        <section class="section" style="background:var(--bg)">
+            <div class="container">
+                <div class="section-header">
+                <div><h2>Популярные занятия</h2><p>С высоким рейтингом и отзывами участников</p></div>
+                <a href="catalog.html" class="btn btn--ghost btn--sm">Все →</a>
+                </div>
+                <div class="cards-grid" id="featuredGrid"></div>
+            </div>
+        </section>
+
+        <section class="section" style="background:var(--accent);color:#fff">
+            <div class="container" style="text-align:center">
+                <div style="font-size:2.5rem;margin-bottom:16px"><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="48" height="48" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                </div>
+                <h2 style="color:#fff;margin-bottom:12px">Есть бесплатные занятия</h2>
+                <p style="color:rgba(255,255,255,0.8);max-width:500px;margin:0 auto 24px">Кружки при библиотеках, дворцах творчества и городских центрах — совершенно бесплатно для жителей города.</p>
+                <a href="catalog.html?free=1" class="btn btn--white">Найти бесплатные занятия</a>
+            </div>
+        </section>
+
+        <section class="section" style="background:var(--surface)">
+            <div class="container">
+                <div class="section-header">
+                    <div><h2>Как это работает</h2></div>
+                </div>
+                <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:24px">
+                <div class="about-card">
+                    <div class="about-card__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="48" height="48" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </div>
+                    <h3>Ищите</h3>
+                    <p>Используйте фильтры по категории, району, возрасту и стоимости, чтобы найти подходящее занятие.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="48" height="48" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                        </svg>
+                    </div>
+                    <h3>Изучайте</h3>
+                    <p>Читайте описание, расписание, отзывы. Смотрите информацию об организации.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="48" height="48" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                        </svg>
+                    </div>
+                    <h3>Записывайтесь</h3>
+                    <p>Оставьте заявку прямо на сайте или свяжитесь с организацией напрямую.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="48" height="48" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                        </svg>
+                    </div>
+                    <h3>Занимайтесь</h3>
+                    <p>Приходите на первое занятие и откройте для себя новое увлечение!</p>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background:var(--bg)">
+            <div class="container">
+                <div style="background:var(--accent-light);border-radius:var(--radius);padding:40px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;flex-wrap:wrap">
+                    <div>
+                        <h2 style="margin-bottom:8px">Вы проводите занятия?</h2>
+                        <p>Добавьте информацию о своём кружке, секции или студии — бесплатно и быстро. Тысячи жителей города найдут вас через каталог.</p>
+                    </div>
+                    <a href="add.html" class="btn btn--primary" style="white-space:nowrap">+ Добавить занятие</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div>
+                        <div class="footer__logo">Кружки<span> Волжского</span></div>
+                        <p class="footer__desc">Городской каталог кружков, секций и активностей для детей и взрослых.</p>
+                    </div>
+                    <div>
+                        <div class="footer__col-title">Каталог</div>
+                        <div class="footer__links">
+                            <a href="catalog.html?category=sport">Спорт</a>
+                            <a href="catalog.html?category=art">Творчество</a>
+                            <a href="catalog.html?category=music">Музыка</a>
+                            <a href="catalog.html?category=tech">IT</a>
+                            <a href="catalog.html?free=1">Бесплатные</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer__col-title">Проект</div>
+                        <div class="footer__links">
+                            <a href="about.html">О нас</a>
+                            <a href="add.html">Добавить занятие</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer__col-title">Контакты</div>
+                        <div class="footer__links">
+                            <a href="mailto:hello@kruzhki-spb.ru">hello@kruzhki-vlz.ru</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">© 2026 Кружки Волжского — демонстрационный прототип</div>
+            </div>
+        </footer>
+
+        <script src="js/data.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const catsGrid = document.getElementById('catsGrid');
+                catsGrid.innerHTML = CATEGORIES.map(cat => `
+                <div class="cat-card" onclick="window.location='catalog.html?category=${cat.id}'">
+                <div class="cat-card__icon">${cat.emoji}</div>
+                <div class="cat-card__name">${cat.label}</div>
+                <div class="cat-card__count">${cat.count} занятий</div>
+                </div>`).join('');
+
+                const featured = [...ACTIVITIES].sort((a,b) => b.rating - a.rating).slice(0,3);
+                document.getElementById('featuredGrid').innerHTML = featured.map(buildActivityCard).join('');
+            });
+
+            function heroSearch() {
+                const q = document.getElementById('heroSearch').value.trim();
+                if (q) window.location = 'catalog.html?q=' + encodeURIComponent(q);
+                else window.location = 'catalog.html';
+            }
+            document.getElementById('heroSearch').addEventListener('keydown', e => {
+                if (e.key === 'Enter') heroSearch();
+            });
+        </script>
+    </body>
+</html>

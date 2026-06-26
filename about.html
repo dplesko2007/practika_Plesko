@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>О проекте — Кружки Волжского</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <nav class="nav">
+            <div class="container nav__inner">
+                <a href="index.html" class="nav__logo">Кружки<span>Волжского</span></a>
+                <div class="nav__links">
+                    <a href="catalog.html">Каталог</a>
+                    <a href="about.html" class="active">О проекте</a>
+                    <a href="add.html" class="nav__cta">+ Добавить занятие</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="about-hero">
+            <div class="container">
+                <h1>О проекте</h1>
+                <p>Кружки Волжского — городской каталог занятий, который помогает жителям находить секции, кружки, студии и курсы рядом с домом.</p>
+            </div>
+        </div>
+
+        <section class="section" style="background:var(--surface)">
+            <div class="container">
+                <div class="section-header"><h2>Целевая аудитория</h2></div>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-card__icon">👨‍👩‍👧</div>
+                        <h3>Родители</h3>
+                        <p>Ищут занятия для детей по возрасту, направлению и удобному расположению. Хотят быстро сравнить варианты и записать ребёнка.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card__icon">🧑</div>
+                        <h3>Подростки</h3>
+                        <p>Самостоятельно ищут новые увлечения: спорт, творчество, IT. Ценят понятное описание, фото атмосферы и отзывы сверстников.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card__icon">🧑‍💼</div>
+                        <h3>Взрослые</h3>
+                        <p>Хотят освоить новый навык, найти хобби или заняться спортом. Ценят удобное расписание и возможность записаться онлайн.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card__icon">🏫</div>
+                        <h3>Организации</h3>
+                        <p>Кружки, студии и секции, которые хотят рассказать о себе и привлечь новых учеников через городской каталог.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header"><h2>Какую проблему решает сервис</h2></div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+                    <div class="about-card" style="border-left:3px solid #ff5252">
+                        <h3 style="margin-bottom:8px">Проблема</h3>
+                        <p>Информация о кружках разбросана по группам ВКонтакте, сайтам школ, досокам объявлений и флаерам. Родители тратят часы, чтобы найти и сравнить варианты. Маленькие студии не могут позволить себе рекламу.</p>
+                    </div>
+                    <div class="about-card" style="border-left:3px solid #7CFF6B">
+                        <h3 style="margin-bottom:8px">Решение</h3>
+                        <p>Единый каталог с удобным поиском по категории, возрасту, району и цене. Подробные карточки с расписанием, отзывами и контактами. Бесплатное размещение для организаций.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background:var(--surface)">
+            <div class="container">
+                <div class="section-header"><h2>Пользовательские сценарии</h2></div>
+                <div class="scenarios-list">
+                    <div class="scenario">
+                        <div class="scenario__num">1</div>
+                        <div>
+                            <h3>Родитель ищет секцию для ребёнка</h3>
+                            <p>Мама хочет записать 8-летнего сына в спортивную секцию в Выборгском районе. Она заходит на сайт, выбирает категорию «Спорт», указывает район и возраст, просматривает карточки, читает отзывы и оставляет заявку.</p>
+                        </div>
+                    </div>
+                    <div class="scenario">
+                        <div class="scenario__num">2</div>
+                        <div>
+                            <h3>Пользователь ищет бесплатные занятия</h3>
+                            <p>Студент с ограниченным бюджетом включает фильтр «Бесплатно» и находит шахматный кружок при библиотеке и бесплатный разговорный клуб английского. Смотрит расписание и контакты.</p>
+                    </div>
+                    </div>
+                    <div class="scenario">
+                        <div class="scenario__num">3</div>
+                        <div>
+                            <h3>Взрослый ищет хобби</h3>
+                            <p>Человек хочет научиться рисовать. Открывает каталог, выбирает «Творчество», читает описания студий, сравнивает цены и рейтинги, переходит на страницу студии и записывается на пробное занятие.</p>
+                        </div>
+                    </div>
+                    <div class="scenario">
+                        <div class="scenario__num">4</div>
+                        <div>
+                            <h3>Подросток ищет танцевальную студию</h3>
+                            <p>Школьница хочет заниматься хип-хопом. Вводит в поиск «хип-хоп», находит студию, смотрит расписание тренировок и контакты, переходит на страницу организации, видит другие занятия и решает попробовать.</p>
+                        </div>
+                    </div>
+                    <div class="scenario">
+                        <div class="scenario__num">5</div>
+                        <div>
+                            <h3>Организация добавляет занятие</h3>
+                            <p>Руководитель нового кружка программирования заходит по кнопке «Добавить занятие», заполняет трёхшаговую форму: информация об организации, о курсе, расписание и цена. Через 1–2 дня занятие появляется в каталоге.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+        <div class="container">
+        <div class="section-header"><h2>Структура сайта</h2></div>
+        <div class="about-grid">
+        <div class="about-card">
+        <div class="about-card__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="48" height="48">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819" />
+        </svg>
+        </div>
+        <h3><code>/</code> — Главная</h3>
+        <p>Hero с поиском, категории, популярные занятия, блок для организаций.</p>
+        </div>
+        <div class="about-card">
+        <div class="about-card__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="48" height="48">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+        </svg>
+        </div>
+        <h3><code>/catalog</code> — Каталог</h3>
+        <p>Все занятия с фильтрами по категории, району, возрасту, цене и поиском.</p>
+        </div>
+        <div class="about-card">
+        <div class="about-card__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="48" height="48">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m.75 12 3 3m0 0 3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+        </svg>
+        </div>
+        <h3><code>/activity</code> — Занятие</h3>
+        <p>Подробная карточка: описание, расписание, контакты, отзывы, форма записи.</p>
+        </div>
+        <div class="about-card">
+        <div class="about-card__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="48" height="48">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+        </svg>
+        </div>
+        <h3><code>/organization</code> — Организация</h3>
+        <p>Профиль организации, её занятия, контакты и статистика.</p>
+        </div>
+        <div class="about-card">
+        <div class="about-card__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="48" height="48">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+        </div>
+        <h3><code>/add</code> — Добавить</h3>
+        <p>Трёхшаговая форма для организаций, которые хотят разместить занятие.</p>
+        </div>
+        <div class="about-card">
+        <div class="about-card__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="48" width="48">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+        </svg>
+        </div>
+        <h3><code>/about</code> — О проекте</h3>
+        <p>Концепт, аудитория, сценарии, структура — эта страница.</p>
+        </div>
+        </div>
+        </div>
+        </section>
+
+        <section class="section" style="background:var(--surface)">
+        <div class="container">
+        <div class="section-header"><h2>Данные</h2></div>
+        <div class="about-card">
+        <p>Прототип использует демонстрационные данные: <strong>8 занятий</strong> и <strong>7 организаций</strong>, описанных в файле <code>js/data.js</code> в виде массивов объектов. Все фильтры, поиск, страницы занятий и организаций работают на этих данных без серверной части. В реальной версии данные хранились бы в базе данных и загружались через API.</p>
+        </div>
+        </div>
+        </section>
+
+        <footer class="footer">
+        <div class="container">
+        <div class="footer__bottom">© 2026 Кружки Волжского — демонстрационный прототип</div>
+        </div>
+        </footer>
+
+        <script src="js/data.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

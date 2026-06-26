@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Добавить занятие — Кружки Волжского</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <nav class="nav">
+            <div class="container nav__inner">
+                <a href="index.html" class="nav__logo">Кружки<span>Волжского</span></a>
+                <div class="nav__links">
+                    <a href="catalog.html">Каталог</a>
+                    <a href="about.html">О проекте</a>
+                    <a href="add.html" class="nav__cta active">+ Добавить занятие</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="add-page">
+            <div class="container">
+                <div class="add-page__header">
+                <h1>Добавить занятие</h1>
+                <p>Расскажите о своём кружке — жители города найдут вас</p>
+                </div>
+
+                <div id="addForm">
+
+                    <div class="form-steps" style="max-width:720px;margin:0 auto 32px">
+                        <div class="form-step active" data-step="1">
+                        <div class="step-dot">1</div>
+                        <div class="step-label">Об организации</div>
+                        </div>
+                        <div class="form-step" data-step="2">
+                            <div class="step-dot">2</div>
+                            <div class="step-label">О занятии</div>
+                        </div>
+                        <div class="form-step" data-step="3">
+                            <div class="step-dot">3</div>
+                            <div class="step-label">Расписание и цена</div>
+                    </div>
+                    </div>
+
+                    <div class="form-card">
+
+                        <div class="form-section" data-step="1">
+                            <div class="form-section__title">01 — Об организации</div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Название организации *</label>
+                                    <input type="text" id="addOrg" placeholder="СК «Звезда», Студия «Арт»...">
+                                </div>
+                                <div class="form-group">
+                                    <label>Тип организации</label>
+                                    <select>
+                                    <option>Спортивная секция</option>
+                                    <option>Творческая студия</option>
+                                    <option>Образовательный центр</option>
+                                    <option>Частный преподаватель</option>
+                                    <option>Муниципальное учреждение</option>
+                                    <option>Другое</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Адрес</label>
+                                    <input type="text" placeholder="ул. Ленина, 10">
+                                </div>
+                                <div class="form-group">
+                                    <label>Район</label>
+                                    <select id="addDistrict"><option value="">Выберите район</option></select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                <label>Телефон *</label>
+                                <input type="tel" placeholder="+7 (___) ___-__-__">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" placeholder="info@example.ru">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Сайт или соцсеть</label>
+                                <input type="url" placeholder="https://...">
+                            </div>
+                        </div>
+
+                        <div class="form-section" data-step="2" style="display:none">
+                            <div class="form-section__title">02 — О занятии</div>
+                            <div class="form-group">
+                                <label>Название занятия *</label>
+                                <input type="text" id="addTitle" placeholder="Футбол для детей, Курс акварели...">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Категория</label>
+                                    <select id="addCategory"><option value="">Выберите категорию</option></select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Возраст</label>
+                                    <div class="filter-range">
+                                        <input type="number" placeholder="от" min="0" max="99">
+                                        <span class="filter-sep">—</span>
+                                        <input type="number" placeholder="до" min="0" max="99">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Описание занятия</label>
+                                <textarea placeholder="Расскажите, чему научатся участники, кто ведёт, особенности подхода..."></textarea>
+                                <div class="form-hint">Минимум 50 символов. Хорошее описание помогает родителям и участникам сделать выбор.</div>
+                            </div>
+                            <div class="form-group">
+                                <label>Теги (через запятую)</label>
+                                <input type="text" placeholder="Начинающие, Командный спорт, Соревнования...">
+                            </div>
+                        </div>
+
+                        <div class="form-section" data-step="3" style="display:none">
+                            <div class="form-section__title">03 — Расписание и стоимость</div>
+                            <div class="form-group">
+                                <label>Расписание</label>
+                                <textarea rows="4" placeholder="Понедельник 17:00–18:30&#10;Среда 17:00–18:30&#10;Пятница 17:00–18:30"></textarea>
+                                <div class="form-hint">Напишите дни и время занятий в свободном формате.</div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                <label>Стоимость (₽)</label>
+                                <input type="number" placeholder="1500" min="0">
+                                <div class="form-hint">0 — если занятие бесплатное</div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Период оплаты</label>
+                                    <select>
+                                        <option>месяц</option>
+                                        <option>занятие</option>
+                                        <option>квартал</option>
+                                        <option>год</option>
+                                        <option>бесплатно</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Дополнительная информация</label>
+                                <textarea rows="3" placeholder="Пробное занятие бесплатно, нужно записаться заранее..."></textarea>
+                            </div>
+                        </div>
+
+                        <div style="display:flex;gap:12px;margin-top:24px;justify-content:space-between">
+                            <button class="btn btn--ghost" id="prevBtn" style="display:none">← Назад</button>
+                            <button class="btn btn--primary" id="nextBtn">Далее →</button>
+                            <button class="btn btn--primary" id="submitBtn" style="display:none">Отправить на проверку ✓</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="addSuccess" style="display:none">
+                    <div class="form-card">
+                        <div class="success-screen">
+                            <div class="success-screen__icon">🎉</div>
+                            <h2>Заявка отправлена!</h2>
+                            <p style="max-width:400px;margin:0 auto 24px">Мы проверим информацию в течение 1–2 рабочих дней и добавим занятие в каталог. На email придёт подтверждение.</p>
+                            <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+                                <a href="catalog.html" class="btn btn--primary">Перейти в каталог</a>
+                                <a href="add.html" class="btn btn--accent-light">Добавить ещё</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+            <div class="footer__bottom">© 2026 Кружки Волжского — демонстрационный прототип</div>
+            </div>
+        </footer>
+
+        <script src="js/data.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/add.js"></script>
+    </body>
+</html>
