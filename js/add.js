@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         sections.forEach(sec => {
-            
+            sec.style.display = parseInt(sec.dataset.step) === currentStep ? 'block' : 'none';
         });
 
         prevBtn.style.display = currentStep > 1 ? 'inline-flex' : 'none';
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (nextBtn) nextBtn.addEventListener('click', () => {
-        
+        if (currentStep < totalSteps) { currentStep++; updateView(); window.scrollTo(0,0) }
     });
     if (prevBtn) prevBtn.addEventListener('click', () => {
         if (currentStep > 1) { currentStep--; updateView(); window.scrollTo(0,0); }
